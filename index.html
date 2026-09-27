@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон-парикмахерская «Кокетка» в Сургуте | Стрижки, окрашивание, прически</title>
+    <meta name="description" content="Уютный салон-парикмахерская «Кокетка» на ул. Энергетиков, 29 в Сургуте. Женские, мужские и детские стрижки, сложное окрашивание, химзавивка. Скидка 10% на первый визит!">
+    
+    <!-- Open Graph for social sharing / WhatsApp preview -->
+    <meta property="og:title" content="Салон-парикмахерская «Кокетка» | Сургут, ул. Энергетиков, 29">
+    <meta property="og:description" content="Профессиональные парикмахерские услуги в Сургуте. Стрижки от 500 ₽, сложное окрашивание, завивка. Запишитесь онлайн со скидкой 10%!">
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#FDF8F6',
+                            100: '#F2E8E5',
+                            200: '#EAD7D1',
+                            300: '#DCBEB5',
+                            400: '#CA9E92',
+                            500: '#B47B6D',
+                            600: '#9E5D4E',
+                            700: '#84473A',
+                            800: '#6E3A2F',
+                            900: '#5A3027',
+                            accent: '#C28271',
+                            gold: '#C5A880',
+                            dark: '#1C1917',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Smooth backdrop blur and custom styling */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .hero-pattern {
+            background-color: #FAF6F0;
+            background-image: radial-gradient(#EAD7D1 0.75px, transparent 0.75px), radial-gradient(#EAD7D1 0.75px, #FAF6F0 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        /* Pulse wave animation for WhatsApp floating button */
+        @keyframes custom-ping {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.35); opacity: 0; }
+            100% { transform: scale(1.35); opacity: 0; }
+        }
+        .animate-custom-ping {
+            animation: custom-ping 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+        }
+    </style>
+</head>
+<body class="bg-[#FCFAF7] text-stone-800 antialiased selection:bg-brand-200 selection:text-brand-900 pb-20 md:pb-0">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-900 text-brand-100 text-xs py-2 px-4 text-center font-medium">
+        <span class="inline-flex items-center gap-1.5 flex-wrap justify-center">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Акция: <strong>скидка 10%</strong> на первый визит при онлайн-записи!</span>
+            <a href="#booking" class="underline hover:text-white font-semibold ml-1">Записаться &rarr;</a>
+        </span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-stone-200/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-brand-600 to-brand-800 text-white flex items-center justify-center font-serif text-2xl font-bold shadow-md shadow-brand-700/20 group-hover:scale-105 transition-transform">
+                    К
+                </div>
+                <div>
+                    <span class="font-serif text-2xl sm:text-3xl font-bold tracking-tight text-stone-900 block leading-tight">Кокетка</span>
+                    <span class="text-[11px] font-medium tracking-wider uppercase text-stone-500 block">Салон-парикмахерская • Сургут</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-stone-600">
+                <a href="#services" class="hover:text-brand-700 transition-colors">Услуги и цены</a>
+                <a href="#advantages" class="hover:text-brand-700 transition-colors">О салоне</a>
+                <a href="#gallery" class="hover:text-brand-700 transition-colors">Наши работы</a>
+                <a href="#reviews" class="hover:text-brand-700 transition-colors">Отзывы 2GIS</a>
+                <a href="#contacts" class="hover:text-brand-700 transition-colors">Контакты</a>
+            </nav>
+
+            <!-- Contacts & Call to Action -->
+            <div class="hidden sm:flex items-center gap-4">
+                <div class="text-right">
+                    <a href="tel:+73462716217" class="text-sm font-bold text-stone-900 hover:text-brand-700 transition-colors flex items-center justify-end gap-1.5">
+                        <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                        +7 (3462) 71-62-17
+                    </a>
+                    <span class="text-[11px] text-stone-500">Энергетиков, 29 • 09:00 - 20:00</span>
+                </div>
+                <button onclick="openBookingModal('Онлайн-запись')" class="bg-brand-700 hover:bg-brand-800 text-white px-5 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider shadow-sm hover:shadow transition-all">
+                    Записаться
+                </button>
+            </div>
+
+            <!-- Mobile menu trigger -->
+            <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-xl text-stone-700 hover:bg-stone-100 focus:outline-none" aria-label="Меню">
+                <svg id="menu-icon-bars" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+                <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Nav -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-stone-200 px-6 py-6 space-y-4">
+            <a href="#services" onclick="toggleMobileMenu()" class="block text-base font-medium text-stone-800 py-1 hover:text-brand-700">Услуги и цены</a>
+            <a href="#advantages" onclick="toggleMobileMenu()" class="block text-base font-medium text-stone-800 py-1 hover:text-brand-700">О салоне</a>
+            <a href="#gallery" onclick="toggleMobileMenu()" class="block text-base font-medium text-stone-800 py-1 hover:text-brand-700">Наши работы</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block text-base font-medium text-stone-800 py-1 hover:text-brand-700">Отзывы 2GIS</a>
+            <a href="#contacts" onclick="toggleMobileMenu()" class="block text-base font-medium text-stone-800 py-1 hover:text-brand-700">Контакты</a>
+            <div class="pt-4 border-t border-stone-100 flex flex-col gap-3">
+                <a href="tel:+73462716217" class="text-base font-bold text-stone-900 flex items-center gap-2">
+                    <span class="w-8 h-8 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-sm">📞</span>
+                    +7 (3462) 71-62-17
+                </a>
+                <button onclick="toggleMobileMenu(); openBookingModal('Онлайн-запись')" class="w-full bg-brand-700 text-white py-3 rounded-xl font-semibold text-sm">
+                    Записаться онлайн (-10%)
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative hero-pattern pt-12 pb-20 md:py-24 overflow-hidden border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text / Offer Column -->
+                <div class="lg:col-span-7 space-y-6 sm:space-y-8">
+                    <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white border border-stone-200/80 shadow-xs">
+                        <span class="flex h-2 w-2 relative">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-600"></span>
+                        </span>
+                        <span class="text-xs font-semibold text-stone-700">г. Сургут, ул. Энергетиков, 29</span>
+                        <span class="text-stone-300">•</span>
+                        <span class="text-xs font-medium text-amber-700 bg-amber-50 px-2 py-0.5 rounded-md">★ 4.0 на картах</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-stone-900 leading-[1.12]">
+                        Идеальная стрижка <br class="hidden sm:inline">
+                        <span class="text-brand-700 italic font-normal">и бережный уход</span> <br>
+                        для всей семьи
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-stone-600 max-w-xl leading-relaxed">
+                        Парикмахерский салон «Кокетка» в Сургуте. От классических мужских стрижек до трендового сложного окрашивания и химической завивки. Забота о здоровье ваших волос без переплат.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <button onclick="openBookingModal('Главный экран')" class="inline-flex items-center justify-center gap-2.5 bg-brand-700 hover:bg-brand-800 text-white font-semibold px-8 py-4 rounded-2xl shadow-lg shadow-brand-700/25 hover:shadow-xl transition-all text-base group">
+                            <span>Записаться со скидкой 10%</span>
+                            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </button>
+                        <a href="https://wa.me/73462716217?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%AF%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0,%20%D1%85%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%20%D0%9A%D0%BE%D0%BA%D0%B5%D1%82%D0%BA%D0%B0" target="_blank" class="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-6 py-4 rounded-2xl shadow-md shadow-emerald-700/20 hover:shadow-lg transition-all text-base">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats Bar -->
+                    <div class="grid grid-cols-3 gap-3 sm:gap-4 pt-6 border-t border-stone-200/70 max-w-lg">
+                        <div>
+                            <span class="block text-xl sm:text-2xl md:text-3xl font-bold font-serif text-stone-900 leading-none mb-1">от 500 ₽</span>
+                            <span class="text-[11px] sm:text-xs text-stone-500">Доступные цены</span>
+                        </div>
+                        <div>
+                            <span class="block text-xl sm:text-2xl md:text-3xl font-bold font-serif text-stone-900 leading-none mb-1">100%</span>
+                            <span class="text-[11px] sm:text-xs text-stone-500">Стерильно</span>
+                        </div>
+                        <div>
+                            <span class="block text-xl sm:text-2xl md:text-3xl font-bold font-serif text-stone-900 leading-none mb-1">10+ лет</span>
+                            <span class="text-[11px] sm:text-xs text-stone-500">Опыт мастеров</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Collage Column -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Main Image Card -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-stone-100 aspect-[4/5]">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80" 
+                                 alt="Салон красоты и парикмахерская Кокетка Сургут" 
+                                 class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950/60 via-transparent to-transparent"></div>
+                            <div class="absolute bottom-6 left-6 right-6 text-white">
+                                <span class="text-xs uppercase tracking-widest font-semibold text-brand-200 block mb-1">Уютная атмосфера</span>
+                                <h3 class="text-xl font-serif font-bold">Сургут, ул. Энергетиков, 29</h3>
+                                <p class="text-xs text-stone-200 mt-1">Ждем вас каждый день с 09:00 до 20:00</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 1: 2GIS Rating -->
+                        <div class="absolute -top-4 -left-4 sm:-left-6 bg-white p-3.5 sm:p-4 rounded-2xl shadow-xl border border-stone-100 flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg">
+                                4.0
+                            </div>
+                            <div>
+                                <div class="flex text-amber-400 text-xs">★★★★★</div>
+                                <span class="text-xs font-semibold text-stone-800 block">Рейтинг в 2GIS</span>
+                                <span class="text-[10px] text-stone-400">46+ реальных отзывов</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Badge 2: Gift / Discount -->
+                        <div class="absolute -bottom-5 -right-4 sm:-right-6 bg-brand-900 text-white p-4 rounded-2xl shadow-xl border border-brand-800/40 max-w-[210px]">
+                            <span class="text-amber-300 text-xs font-bold uppercase tracking-wider block mb-0.5">Подарок новичкам</span>
+                            <p class="text-xs font-medium text-brand-100 leading-snug">Скидка 10% на стрижку или уход при первой записи онлайн</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES SECTION -->
+    <section id="advantages" class="py-16 sm:py-24 bg-white border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full inline-block mb-3">Почему выбирают нас</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Забота о вашей красоте и времени</h2>
+                <p class="text-stone-500 text-sm sm:text-base mt-3">Мы создали место, куда приятно приходить всей семьей: доброжелательные мастера, аккуратная работа и домашний уют.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Advantage 1 -->
+                <div class="p-6 rounded-3xl bg-[#FCFAF7] border border-stone-200/80 hover:border-brand-300 hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        ✂️
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-stone-900 mb-2">Опытные мастера</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Специалисты с многолетним стажем. Умеем слушать пожелания и подбирать форму стрижки под тип лица.</p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="p-6 rounded-3xl bg-[#FCFAF7] border border-stone-200/80 hover:border-brand-300 hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        🧴
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-stone-900 mb-2">Профессиональный уход</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Используем сертифицированные красители и щадящие составы, сохраняющие природную силу и блеск волос.</p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="p-6 rounded-3xl bg-[#FCFAF7] border border-stone-200/80 hover:border-brand-300 hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        🛡️
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-stone-900 mb-2">Чистота и СанПиН</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Многоступенчатая стерилизация инструмента, одноразовые воротнички и полотенца для вашей безопасности.</p>
+                </div>
+
+                <!-- Advantage 4 -->
+                <div class="p-6 rounded-3xl bg-[#FCFAF7] border border-stone-200/80 hover:border-brand-300 hover:shadow-md transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center text-xl mb-5 group-hover:scale-110 transition-transform">
+                        ☕
+                    </div>
+                    <h3 class="font-serif font-bold text-lg text-stone-900 mb-2">Комфорт и забота</h3>
+                    <p class="text-stone-600 text-sm leading-relaxed">Удобная локация на Энергетиков, 29, парковка, чай, кофе и приятная спокойная музыка во время визита.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & PRICING SECTION WITH TABS -->
+    <section id="services" class="py-16 sm:py-24 bg-[#FAF6F0] border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-100/70 px-3.5 py-1.5 rounded-full inline-block mb-3">Прайс-лист</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Услуги и прозрачные цены</h2>
+                <p class="text-stone-600 text-sm sm:text-base mt-2">Никаких скрытых доплат. Точную стоимость мастер озвучивает до начала работы.</p>
+            </div>
+
+            <!-- Tab Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+                <button onclick="switchTab('women')" id="tab-btn-women" class="tab-btn active px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-brand-800 text-white shadow-sm">
+                    Женский зал
+                </button>
+                <button onclick="switchTab('men')" id="tab-btn-men" class="tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+                    Мужской & детский зал
+                </button>
+                <button onclick="switchTab('color')" id="tab-btn-color" class="tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+                    Окрашивание & уход
+                </button>
+                <button onclick="switchTab('curls')" id="tab-btn-curls" class="tab-btn px-5 py-2.5 rounded-full text-sm font-semibold transition-all bg-white text-stone-600 hover:bg-stone-100 border border-stone-200">
+                    Химзавивка & прически
+                </button>
+            </div>
+
+            <!-- Tab Content 1: Women -->
+            <div id="tab-content-women" class="tab-pane grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Модельная стрижка</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 800 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Включает мытье головы профессиональным шампунем, стрижку по форме и сушку феном с легкой укладкой.</p>
+                    </div>
+                    <button onclick="openBookingModal('Женская модельная стрижка (от 800 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Подравнивание / Челка</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 400 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Идеально ровный срез по одной длине машинкой или ножницами. Оформление или коррекция челки.</p>
+                    </div>
+                    <button onclick="openBookingModal('Подравнивание / Челка (от 400 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Стрижка каре / боб</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 900 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Точная геометрия среза, индивидуальный подбор градуировки и угла наклона под овал лица.</p>
+                    </div>
+                    <button onclick="openBookingModal('Стрижка каре / боб (от 900 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content 2: Men -->
+            <div id="tab-content-men" class="tab-pane hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Мужская стрижка</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 500 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Классическая, модельная, спортивная или под насадки. Аккуратная окантовка и мытье головы.</p>
+                    </div>
+                    <button onclick="openBookingModal('Мужская стрижка (от 500 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Оформление бороды</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 400 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Коррекция контуров, моделирование четкой формы и укорачивание длины триммером.</p>
+                    </div>
+                    <button onclick="openBookingModal('Оформление бороды (от 400 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Детская стрижка (до 10 лет)</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 450 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Бережный и терпеливый подход к маленьким гостям. Быстро, аккуратно и без слез.</p>
+                    </div>
+                    <button onclick="openBookingModal('Детская стрижка (от 450 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content 3: Coloring & Care -->
+            <div id="tab-content-color" class="tab-pane hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Окрашивание в 1 тон</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 1 500 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Насыщенный цвет, закрашивание 100% седины, равномерный тон по всей длине с защитным уходом.</p>
+                    </div>
+                    <button onclick="openBookingModal('Окрашивание в 1 тон (от 1 500 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Сложное окрашивание</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 2 800 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">AirTouch, шатуш, балаяж, мелирование с мягким отрастанием корней и естественным сиянием.</p>
+                    </div>
+                    <button onclick="openBookingModal('Сложное окрашивание (от 2 800 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Восстановление волос</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 1 200 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Глубокое увлажнение, запаивание секущихся концов и шелковистая гладкость без утяжеления.</p>
+                    </div>
+                    <button onclick="openBookingModal('Восстановление волос (от 1 200 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Content 4: Curls & Hairstyles -->
+            <div id="tab-content-curls" class="tab-pane hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <span class="inline-block bg-brand-100 text-brand-800 text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full mb-1">Хит салона</span>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 2 000 ₽</span>
+                        </div>
+                        <h3 class="font-serif font-bold text-lg text-stone-900 mb-1">Химическая завивка</h3>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Стойкий прикорневой объем или упругие локоны на мягких составах с сохранением структуры волос.</p>
+                    </div>
+                    <button onclick="openBookingModal('Химическая завивка (от 2 000 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Вечерняя прическа</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 1 800 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Элегантные пучки, голливудская волна, плетения для торжеств, юбилеев и корпоративов.</p>
+                    </div>
+                    <button onclick="openBookingModal('Вечерняя прическа (от 1 800 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-4 mb-2">
+                            <h3 class="font-serif font-bold text-lg text-stone-900">Свадебный образ</h3>
+                            <span class="text-brand-800 font-bold text-lg whitespace-nowrap">от 2 500 ₽</span>
+                        </div>
+                        <p class="text-stone-500 text-xs sm:text-sm mb-4">Стойкая праздничная прическа с фиксацией фаты и аксессуаров. Возможна предварительная репетиция.</p>
+                    </div>
+                    <button onclick="openBookingModal('Свадебный образ (от 2 500 ₽)')" class="w-full mt-4 py-2.5 px-4 rounded-xl bg-stone-100 hover:bg-brand-700 hover:text-white text-stone-800 text-xs font-semibold uppercase tracking-wider transition-colors">
+                        Записаться
+                    </button>
+                </div>
+            </div>
+
+            <!-- Custom Question Banner -->
+            <div class="mt-12 bg-white rounded-3xl p-6 sm:p-8 border border-stone-200/80 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-6">
+                <div>
+                    <h3 class="font-serif font-bold text-xl text-stone-900">Не нашли нужную услугу в прайсе?</h3>
+                    <p class="text-stone-500 text-sm mt-1">Позвоните нам или напишите в WhatsApp — мастер бесплатно проконсультирует и назовет точную стоимость.</p>
+                </div>
+                <div class="flex items-center gap-3 w-full sm:w-auto">
+                    <a href="tel:+73462716217" class="w-full sm:w-auto text-center px-6 py-3 rounded-2xl bg-stone-100 hover:bg-stone-200 font-semibold text-xs uppercase tracking-wider text-stone-800 transition-colors">
+                        +7 (3462) 71-62-17
+                    </a>
+                    <a href="https://wa.me/73462716217" target="_blank" class="w-full sm:w-auto text-center px-6 py-3 rounded-2xl bg-emerald-600 hover:bg-emerald-700 font-semibold text-xs uppercase tracking-wider text-white transition-colors">
+                        WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY / ATMOSPHERE SECTION -->
+    <section id="gallery" class="py-16 sm:py-24 bg-white border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full inline-block mb-3">Галерея</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Атмосфера и примеры работ</h2>
+                </div>
+                <p class="text-stone-500 text-sm sm:text-base max-w-md mt-4 md:mt-0">Каждая деталь в нашем салоне продумана для вашего максимального расслабления и комфорта.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Стрижка и укладка" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-stone-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <span class="text-white text-xs font-medium">Женская укладка</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Мужская стрижка" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-stone-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <span class="text-white text-xs font-medium">Мужской стиль</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" alt="Сложное окрашивание" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-stone-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <span class="text-white text-xs font-medium">Сложное окрашивание</span>
+                    </div>
+                </div>
+                <div class="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-stone-100">
+                    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=600&q=80" alt="Интерьер салона" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-stone-900/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+                        <span class="text-white text-xs font-medium">Уютная зона для гостей</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REVIEWS FROM 2GIS SECTION -->
+    <section id="reviews" class="py-16 sm:py-24 bg-[#FCFAF7] border-b border-stone-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-3">
+                        <span class="text-xs font-bold uppercase tracking-widest text-emerald-800 bg-emerald-50 border border-emerald-200 px-3 py-1 rounded-full">2GIS Проверено</span>
+                        <div class="flex text-amber-400 text-sm">★★★★☆</div>
+                        <span class="text-xs font-bold text-stone-700">4.0 (46 отзывов)</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Что говорят наши постоянные гости</h2>
+                </div>
+                <a href="https://2gis.ru/surgut/firm/5489291327359451" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-700 hover:text-brand-900 mt-4 sm:mt-0 underline">
+                    Читать все 46 отзывов на 2GIS &rarr;
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="bg-white p-7 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+                        <p class="text-stone-700 text-sm leading-relaxed mb-6 italic">
+                            «Хожу в этот салон уже не первый год на стрижку и подравнивание. Всегда аккуратно, мастер сразу понимает, какую длину нужно убрать. Очень дружелюбная и спокойная атмосфера, без пафоса и с душой!»
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+                        <div class="w-9 h-9 rounded-full bg-brand-100 text-brand-800 font-bold flex items-center justify-center text-sm">
+                            Е
+                        </div>
+                        <div>
+                            <span class="font-bold text-xs text-stone-900 block">Елена В.</span>
+                            <span class="text-[11px] text-stone-400">Постоянная клиентка</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="bg-white p-7 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+                        <p class="text-stone-700 text-sm leading-relaxed mb-6 italic">
+                            «Делала здесь химическую завивку. Мастер очень бережно отнеслась к волосам, подобрала щадящий состав, дала кучу полезных рекомендаций по домашнему уходу. Локоны держатся супер, я в восторге!»
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+                        <div class="w-9 h-9 rounded-full bg-rose-100 text-rose-800 font-bold flex items-center justify-center text-sm">
+                            О
+                        </div>
+                        <div>
+                            <span class="font-bold text-xs text-stone-900 block">Ольга М.</span>
+                            <span class="text-[11px] text-stone-400">Отзыв из 2GIS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="bg-white p-7 rounded-3xl border border-stone-200/80 shadow-xs flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 text-sm mb-3">★★★★★</div>
+                        <p class="text-stone-700 text-sm leading-relaxed mb-6 italic">
+                            «Привел сына перед школой и сам подстригся. Стригут быстро, ровно, сына развлекли разговорами, он даже не капризничал. Цены абсолютно адекватные, рядом удобная парковка на Энергетиков.»
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 pt-4 border-t border-stone-100">
+                        <div class="w-9 h-9 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center text-sm">
+                            А
+                        </div>
+                        <div>
+                            <span class="font-bold text-xs text-stone-900 block">Артем Д.</span>
+                            <span class="text-[11px] text-stone-400">Сургут</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ONLINE BOOKING FORM SECTION -->
+    <section id="booking" class="py-16 sm:py-24 bg-white border-b border-stone-200/60">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-brand-900 via-stone-900 to-stone-950 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+                <!-- Decorative Glow -->
+                <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-brand-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10 text-center max-w-xl mx-auto mb-10">
+                    <span class="text-xs uppercase tracking-widest font-semibold text-brand-300 bg-brand-800/60 px-4 py-1.5 rounded-full inline-block mb-3 border border-brand-700">
+                        Онлайн-запись
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">Запишитесь со скидкой 10%</h2>
+                    <p class="text-stone-300 text-sm sm:text-base mt-3">Оставьте контактные данные — администратор свяжется с вами в течение 10 минут, уточнит удобное время и закрепит за вами скидку.</p>
+                </div>
+
+                <form id="lead-form" onsubmit="handleFormSubmit(event)" class="relative z-10 space-y-4 max-w-lg mx-auto">
+                    <!-- Name Input -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-1.5">Ваше имя</label>
+                        <input type="text" name="name" required placeholder="Например: Анна" class="w-full px-4 py-3.5 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:bg-white/15 transition-all text-sm">
+                    </div>
+
+                    <!-- Phone Input with Mask -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-1.5">Номер телефона</label>
+                        <input type="tel" name="phone" id="phone-input" required placeholder="+7 (___) ___-__-__" class="w-full px-4 py-3.5 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-stone-400 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:bg-white/15 transition-all text-sm">
+                    </div>
+
+                    <!-- Service Selection -->
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-1.5">Желаемая услуга</label>
+                        <select name="service" class="w-full px-4 py-3.5 rounded-2xl bg-stone-900 border border-white/20 text-white focus:outline-none focus:ring-2 focus:ring-brand-400 transition-all text-sm">
+                            <option value="Женская стрижка" selected>Женская стрижка</option>
+                            <option value="Мужская стрижка">Мужская стрижка</option>
+                            <option value="Детская стрижка">Детская стрижка</option>
+                            <option value="Окрашивание волос">Сложное окрашивание / тон</option>
+                            <option value="Химическая завивка">Химическая завивка</option>
+                            <option value="Вечерняя прическа">Вечерняя / свадебная прическа</option>
+                            <option value="Консультация">Нужна консультация мастера</option>
+                        </select>
+                    </div>
+
+                    <!-- Privacy Checkbox -->
+                    <div class="flex items-start gap-2.5 pt-2">
+                        <input type="checkbox" id="privacy-agree" required checked class="mt-1 w-4 h-4 rounded text-brand-600 focus:ring-brand-400 border-white/30 bg-white/10">
+                        <label for="privacy-agree" class="text-xs text-stone-400 leading-normal">
+                            Я согласен на обработку персональных данных в соответствии с <a href="privacy.html" target="_blank" class="underline text-stone-300 hover:text-white">Политикой конфиденциальности (152-ФЗ РФ)</a>.
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" id="submit-btn" class="w-full mt-4 bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 rounded-2xl text-sm uppercase tracking-wider shadow-lg shadow-brand-500/30 hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                        <span>Записаться со скидкой 10%</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </button>
+                </form>
+
+                <!-- Feedback status message container -->
+                <div id="form-status" class="hidden mt-6 p-4 rounded-2xl text-center text-sm font-medium"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTS & MAP SECTION -->
+    <section id="contacts" class="py-16 sm:py-24 bg-[#FCFAF7]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-brand-600 bg-brand-50 px-3.5 py-1.5 rounded-full inline-block mb-3">Где мы находимся</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900">Ждем вас в гости</h2>
+                        <p class="text-stone-500 text-sm mt-2">Удобное расположение в центральной части Сургута с парковочными местами для автомобилей.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200/80">
+                            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0">
+                                📍
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-stone-400 uppercase tracking-wider block">Адрес</span>
+                                <span class="font-bold text-stone-900 text-sm sm:text-base">г. Сургут, ул. Энергетиков, 29</span>
+                                <span class="text-xs text-stone-500 block mt-0.5">1 этаж, отдельный вход</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200/80">
+                            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0">
+                                ⏰
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-stone-400 uppercase tracking-wider block">Режим работы</span>
+                                <span class="font-bold text-stone-900 text-sm sm:text-base">Ежедневно: с 09:00 до 20:00</span>
+                                <span class="text-xs text-emerald-700 font-medium block mt-0.5">Без обеда и выходных</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-stone-200/80">
+                            <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center shrink-0">
+                                📞
+                            </div>
+                            <div>
+                                <span class="text-xs font-semibold text-stone-400 uppercase tracking-wider block">Телефон для записи</span>
+                                <a href="tel:+73462716217" class="font-bold text-brand-800 hover:text-brand-900 text-lg block">
+                                    +7 (3462) 71-62-17
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Direct Map Links Buttons -->
+                    <div class="flex flex-wrap gap-3 pt-2">
+                        <a href="https://2gis.ru/surgut/firm/5489291327359451" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[#00A03C] hover:bg-[#008f35] text-white text-xs font-bold uppercase tracking-wider shadow-sm transition-colors">
+                            <span>Открыть в 2GIS</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                        <a href="https://yandex.ru/maps/?text=%D0%A1%D1%83%D1%80%D0%B3%D1%83%D1%82%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%AD%D0%BD%D0%B5%D1%80%D0%B3%D0%B5%D1%82%D0%B8%D0%BA%D0%BE%D0%B2%2C%2029" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-[#FC3F1D] hover:bg-[#e03719] text-white text-xs font-bold uppercase tracking-wider shadow-sm transition-colors">
+                            <span>Яндекс Карты</span>
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Interactive Map Frame Column -->
+                <div class="lg:col-span-7">
+                    <div class="rounded-3xl overflow-hidden shadow-lg border border-stone-200/80 aspect-[16/10] bg-stone-100 relative">
+                        <iframe 
+                            src="https://yandex.ru/map-widget/v1/?ll=73.397815%2C61.242042&z=16&pt=73.397815,61.242042,pm2rdm" 
+                            width="100%" 
+                            height="100%" 
+                            frameborder="0" 
+                            allowfullscreen="true" 
+                            loading="lazy"
+                            title="Карта проезда: Сургут, ул. Энергетиков, 29"
+                            class="w-full h-full filter saturate-[0.95]">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-12 border-t border-stone-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-stone-800">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-xl bg-brand-800 text-white flex items-center justify-center font-serif text-xl font-bold">
+                        К
+                    </div>
+                    <div>
+                        <span class="font-serif text-xl font-bold text-white block">Кокетка</span>
+                        <span class="text-xs text-stone-500">Салон-парикмахерская в Сургуте</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap items-center justify-center gap-6 text-xs">
+                    <a href="#services" class="hover:text-white transition-colors">Услуги</a>
+                    <a href="#advantages" class="hover:text-white transition-colors">Преимущества</a>
+                    <a href="#gallery" class="hover:text-white transition-colors">Галерея</a>
+                    <a href="#reviews" class="hover:text-white transition-colors">Отзывы 2GIS</a>
+                    <a href="privacy.html" class="hover:text-white underline transition-colors">Политика конфиденциальности</a>
+                </div>
+
+                <div class="text-xs text-stone-500">
+                    ул. Энергетиков, 29 • Сургут
+                </div>
+            </div>
+
+            <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 gap-4">
+                <p>&copy; 2026 Салон-парикмахерская «Кокетка». Все права защищены.</p>
+                <p class="text-[11px] text-stone-500">Информация на сайте не является публичной офертой (ст. 437 ГК РФ).</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DESKTOP FLOATING WHATSAPP BUTTON -->
+    <div class="fixed bottom-6 right-6 z-40 hidden sm:flex">
+        <a href="https://wa.me/73462716217?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%20%D0%9A%D0%BE%D0%BA%D0%B5%D1%82%D0%BA%D0%B0" 
+           target="_blank" 
+           class="relative group flex items-center justify-center w-14 h-14 bg-emerald-500 hover:bg-emerald-600 rounded-full text-white shadow-xl hover:shadow-2xl transition-all" 
+           aria-label="Написать в WhatsApp">
+            <span class="animate-custom-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <svg class="w-7 h-7 fill-current relative z-10" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span class="absolute right-16 top-1/2 -translate-y-1/2 bg-stone-900 text-white text-xs font-semibold py-1.5 px-3 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                Задать вопрос в WhatsApp
+            </span>
+        </a>
+    </div>
+
+    <!-- MOBILE FIXED BOTTOM ACTION BAR (Ultimate mobile conversion) -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-stone-200 px-3 py-2.5 sm:hidden flex items-center gap-2">
+        <a href="tel:+73462716217" class="flex-1 inline-flex items-center justify-center gap-1 bg-stone-100 text-stone-800 py-3 rounded-xl text-xs font-bold uppercase tracking-wider">
+            <svg class="w-4 h-4 text-brand-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>Звонок</span>
+        </a>
+        <a href="https://wa.me/73462716217?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F%20%D0%B2%20%D1%81%D0%B0%D0%BB%D0%BE%D0%BD%20%D0%9A%D0%BE%D0%BA%D0%B5%D1%82%D0%BA%D0%B0" target="_blank" class="w-12 h-11 inline-flex items-center justify-center bg-emerald-600 text-white rounded-xl shadow-xs">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+        </a>
+        <button onclick="openBookingModal('Быстрая мобильная запись')" class="flex-[1.5] inline-flex items-center justify-center gap-1.5 bg-brand-700 text-white py-3 rounded-xl text-xs font-bold uppercase tracking-wider shadow-md">
+            Записаться (-10%)
+        </button>
+    </div>
+
+    <!-- BOOKING POPUP MODAL (Native Dialog API) -->
+    <dialog id="booking-modal" class="rounded-3xl p-0 backdrop:bg-stone-950/70 border-0 max-w-lg w-full m-auto shadow-2xl overflow-hidden">
+        <div class="bg-white p-6 sm:p-8">
+            <div class="flex items-center justify-between pb-4 border-b border-stone-100 mb-6">
+                <div>
+                    <span class="text-xs uppercase tracking-wider font-semibold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-md">Быстрая запись</span>
+                    <h3 class="font-serif text-2xl font-bold text-stone-900 mt-1" id="modal-title">Онлайн-запись</h3>
+                </div>
+                <button onclick="closeBookingModal()" class="w-8 h-8 rounded-full bg-stone-100 hover:bg-stone-200 text-stone-600 flex items-center justify-center text-sm font-bold transition-colors">
+                    ✕
+                </button>
+            </div>
+
+            <form id="modal-form" onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <input type="hidden" name="service_preset" id="modal-service-input">
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-600 mb-1">Выбранная услуга</label>
+                    <div id="modal-service-display" class="p-3 bg-stone-50 border border-stone-200 rounded-xl text-xs font-semibold text-brand-800">
+                        Любая парикмахерская услуга
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-600 mb-1">Ваше имя</label>
+                    <input type="text" name="modal_name" required placeholder="Как к вам обращаться?" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-600 mb-1">Номер телефона</label>
+                    <input type="tel" name="modal_phone" id="modal-phone-input" required placeholder="+7 (___) ___-__-__" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider font-semibold text-stone-600 mb-1">Желаемая дата или время</label>
+                    <input type="text" name="modal_time" placeholder="Например: завтра после 14:00" class="w-full px-4 py-3 rounded-xl border border-stone-300 text-sm focus:ring-2 focus:ring-brand-600 focus:outline-none">
+                </div>
+
+                <div class="flex items-start gap-2 pt-1">
+                    <input type="checkbox" required checked id="modal-agree" class="mt-0.5 w-4 h-4 rounded text-brand-600">
+                    <label for="modal-agree" class="text-[11px] text-stone-500">
+                        Согласен с <a href="privacy.html" target="_blank" class="underline text-stone-700">политикой конфиденциальности</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full mt-4 bg-brand-700 hover:bg-brand-800 text-white font-bold py-3.5 rounded-xl text-xs uppercase tracking-wider shadow-md transition-all">
+                    Подтвердить запись со скидкой 10%
+                </button>
+            </form>
+        </div>
+    </dialog>
+
+    <!-- SUCCESS TOAST NOTIFICATION -->
+    <div id="success-toast" class="fixed top-5 right-5 z-50 transform translate-y-[-150%] transition-transform duration-500 max-w-sm w-full bg-emerald-900 text-white p-5 rounded-2xl shadow-2xl border border-emerald-700 flex items-start gap-3">
+        <div class="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 font-bold">✓</div>
+        <div>
+            <h4 class="font-bold text-sm">Заявка принята!</h4>
+            <p class="text-xs text-emerald-100 mt-1">Спасибо! Администратор салона «Кокетка» перезвонит вам в течение 10 минут для подтверждения времени.</p>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // 1. Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const iconBars = document.getElementById('menu-icon-bars');
+            const iconClose = document.getElementById('menu-icon-close');
+            menu.classList.toggle('hidden');
+            iconBars.classList.toggle('hidden');
+            iconClose.classList.toggle('hidden');
+        }
+
+        // 2. Services Tabs Switching
+        function switchTab(tabId) {
+            // Hide all tab panes
+            document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+            // Remove active classes from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-800', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-white', 'text-stone-600', 'hover:bg-stone-100', 'border', 'border-stone-200');
+            });
+
+            // Show selected pane
+            const activePane = document.getElementById('tab-content-' + tabId);
+            if (activePane) activePane.classList.remove('hidden');
+
+            // Style active button
+            const activeBtn = document.getElementById('tab-btn-' + tabId);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-stone-600', 'hover:bg-stone-100', 'border', 'border-stone-200');
+                activeBtn.classList.add('bg-brand-800', 'text-white', 'shadow-sm');
+            }
+        }
+
+        // 3. Modal Booking Management
+        const modal = document.getElementById('booking-modal');
+        function openBookingModal(serviceName = 'Онлайн-запись') {
+            document.getElementById('modal-title').textContent = 'Онлайн-запись';
+            document.getElementById('modal-service-display').textContent = serviceName;
+            document.getElementById('modal-service-input').value = serviceName;
+            if (typeof modal.showModal === 'function') {
+                modal.showModal();
+            } else {
+                modal.setAttribute('open', '');
+            }
+        }
+
+        function closeBookingModal() {
+            if (typeof modal.close === 'function') {
+                modal.close();
+            } else {
+                modal.removeAttribute('open');
+            }
+        }
+
+        // Close modal when clicking on backdrop
+        modal.addEventListener('click', (e) => {
+            const rect = modal.getBoundingClientRect();
+            const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height
+              && rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+            if (!isInDialog) {
+                closeBookingModal();
+            }
+        });
+
+        // 4. Phone Input Formatting Mask (+7 (XXX) XXX-XX-XX)
+        function setupPhoneMask(input) {
+            input.addEventListener('input', function (e) {
+                let x = e.target.value.replace(/\D/g, '').match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/);
+                if (!x[2]) {
+                    e.target.value = x[1] ? '+7 (' + x[1] : '';
+                    return;
+                }
+                e.target.value = '+7 (' + x[2] + (x[3] ? ') ' + x[3] : '') + (x[4] ? '-' + x[4] : '') + (x[5] ? '-' + x[5] : '');
+            });
+        }
+        setupPhoneMask(document.getElementById('phone-input'));
+        setupPhoneMask(document.getElementById('modal-phone-input'));
+
+        // 5. Toast Notification
+        function showSuccessToast() {
+            const toast = document.getElementById('success-toast');
+            toast.classList.remove('translate-y-[-150%]');
+            setTimeout(() => {
+                toast.classList.add('translate-y-[-150%]');
+            }, 6000);
+        }
+
+        // 6. Form Submission Handlers
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const originalText = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<span>Отправка...</span>';
+
+            // Simulate instant successful client feedback
+            setTimeout(() => {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+                e.target.reset();
+                showSuccessToast();
+            }, 700);
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            closeBookingModal();
+            showSuccessToast();
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
